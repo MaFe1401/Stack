@@ -7,22 +7,26 @@ public class StackTester
 
         try
         {
+             p.push(1);
             p.push(3);
             p.push(2);
             p.push (4);
             p.push(7);
-
+            p.push(8);
         }
         catch (PilaLlenaException e)
         {
             System.out.println(e.getMessage());
         }
+
         try
         {
-            for(int i=0;i<6;i++)
-            {
-                p.pop();
-            }
+            p.pop();
+            p.pop();
+            p.pop();
+            p.pop();
+            p.pop();
+            p.pop();
 
         }
         catch(PilaVaciaException e)
